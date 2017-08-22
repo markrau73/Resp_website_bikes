@@ -15,15 +15,37 @@
         </div>
           <div class="left-menu">
             <nav>
-                <ul class="horizontal_menu">
-                  <li>
-                    <a href="#about">ABOUT US</a>
+                <ul class="ul_left_menu">
+                  <li class="main-li visible-li">
+                    <a href="#about" class="hov">ABOUT US</a>
+                    <ul class="hidden-menu">
+                      <li class="hidden-li">
+                        <a href="#about" class="hov">Yesterday</a>
+                      </li>
+                      <li class="hidden-li">
+                        <a href="#about" class="hov">Today</a>
+                      </li>
+                      <li class="hidden-li">
+                        <a href="#about" class="hov">Tomorrow</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
+                  <li class="main-li">
                     .
                   </li>
-                  <li>
-                    <a href="#work">WORK</a>
+                  <li class="main-li visible-li">
+                    <a href="#work" class="hov">WORK</a>
+                    <ul class="hidden-menu">
+                      <li class="hide">
+                        <a href="#about" class="hov">Technology</a>
+                      </li>
+                      <li class="hidden-li">
+                        <a href="#about" class="hov">Projects</a>
+                      </li>
+                      <li class="hidden-li">
+                        <a href="#about" class="hov">Research</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </nav>
@@ -33,14 +55,14 @@
           <div class="right_menu">
               <nav>
                 <ul class="horizontal_menu">
-                  <li>
-                    <a href="#shop">SHOP</a>
+                  <li class="main-li">
+                    <a href="#shop" class="hov">SHOP</a>
                   </li>
-                  <li>
+                  <li class="main-li">
                     .
                   </li>
-                  <li>
-                    <a href="#contact">CONTACT</a>
+                  <li class="main-li">
+                    <a href="#contact" class="hov">CONTACT</a>
                   </li>
                 </ul>
               </nav>
@@ -162,7 +184,7 @@
               <h2 class="twitter-post">
                 <div class="twitter-logo">
                 </div>
-                <a href="#">AOS New York @aod</a>
+                <a href="#" class="hov">AOS New York @aod</a>
                 <span>/ 35 min</span>
               </h2>
               <p class="slide-text">
@@ -175,7 +197,7 @@
               <h2 class="twitter-post">
                 <div class="twitter-logo">
                 </div>
-                <a href="#">AOS New York @aod</a>
+                <a href="#" class="hov">AOS New York @aod</a>
                 <span>/ 35 min</span>
               </h2>
               <p class="slide-text">
@@ -187,7 +209,7 @@
               <h2 class="twitter-post">
                 <div class="twitter-logo">
                 </div>
-                <a href="#">AOS New York @aod</a>
+                <a href="#" class="hov">AOS New York @aod</a>
                 <span>/ 35 min</span>
               </h2>
               <p class="slide-text">
@@ -206,41 +228,58 @@
   </section>
   <section class="seventh">
     <div class="container">
-      <div class="seventh_left">
-        <div class="small_black_saddle">
-
+      <div class="seventh_cont">
+        <div class="seventh_left">
+          <div class="seventh_left_top">
+            <div class="small_black_saddle animated">
+                <img src="images/white-bike-icon.png" class="img_animated"/>
+                <a href="#shop" class="expand">LEATHER SEATS</a>
+            </div>
+            <div class="saddles animated">
+              <img src="images/white-bike-icon.png" class="img_animated"/>
+              <a href="#shop" class="expand">CUSTOM SEATS</a>
+            </div>
+          </div>
+          <div class="seventh_left_bottom animated">
+            <img src="images/white-bike-icon.png" class="img_animated"/>
+            <a href="#shop" class="expand">LIMITED EDITION</a>
+          </div>
         </div>
-        <div class="saddles">
-
+        <div class="seventh_center">
+          <div class="half_left animated">
+            <img src="images/white-bike-icon.png" class="img_animated"/>
+            <a href="#shop" class="expand">SHOP BAGS</a>
+          </div>
+          <div class="half_right animated">
+            <img src="images/white-bike-icon.png" class="img_animated"/>
+            <a href="#shop" class="expand">SHOP BIKES</a>
+          </div>
         </div>
-        <div class="big_black_saddle">
-
-        </div>
-      </div>
-      <div class="seventh_center">
-        <div class="half_left">
-
-        </div>
-        <div class="half_right">
-
-        </div>
-      </div>
-      <div class="seventh_right">
-        <div class="cycle_shop">
-
-        </div>
-        <div class="brown_saddle">
-
-        </div>
-        <div class="blue_bag">
-
+        <div class="seventh_right">
+          <div class="seventh_right_top animated">
+            <img src="images/white-bike-icon.png" class="img_animated"/>
+            <a href="#shop" class="expand">SHOP NOW</a>
+          </div>
+          <div class="seventh_right_bottom">
+            <div class="brown_saddle animated">
+              <img src="images/white-bike-icon.png" class="img_animated"/>
+              <a href="#shop" class="expand">SHOP SEATS</a>
+            </div>
+            <div class="blue_bag animated">
+              <img src="images/white-bike-icon.png" class="img_animated"/>
+              <a href="#shop" class="expand">SHOP ACCESSORIES</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="eightth">
+  <section class="eighth">
     <div class="container">
-      <div class="button">
+      <div class="button_cont">
+        <div class=button>
+            <a href="#shop" class="shop-button hov">DISCOVER THE SHOP</a>
+        </div>
 
       </div>
     </div>
@@ -271,6 +310,7 @@
 
     </div>
   </footer>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

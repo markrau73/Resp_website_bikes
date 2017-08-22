@@ -1,4 +1,4 @@
-*{
+* {
   margin:0;
   padding:0;
   box-sizing: border-box;
@@ -33,12 +33,61 @@ body {
   margin-left: -10px;
 }
 
-@media (max-width: 950px){
-  .menu {
+.left_menu .right_menu  {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ul_left_menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden-li {
+  margin-top: 10px;
+}
+
+.hidden-menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 20px;
+  display: none;
+}
+
+.main-li {
+  display: inline-block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 20px;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 40px;
+  letter-spacing: 2px;
+}
+
+.visible-li {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1020px){
+.menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+  .ul_left_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .visible-li {
+    text-align: left;
+  }
+  .hidden-li {
+    margin-top: 5px;
   }
   .aod_logo_1 {
     display: none;
@@ -48,18 +97,7 @@ body {
   }
 }
 
-
-.horizontal_menu li {
-  display: inline-block;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 30px;
-  letter-spacing: 2px;
-}
-
-a {
+.hov {
   color: #4d4959;
   cursor: auto;
   text-decoration: none;
@@ -69,7 +107,7 @@ a {
   transition-delay: initial;
 }
 
-a:hover {
+.hov:hover {
   color: #5ec29d;
 }
 
@@ -105,7 +143,7 @@ a:hover {
   background-color: #fbfbfb;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px){
   .intro {
     height: 70vh;
   }
@@ -175,7 +213,7 @@ a:hover {
   flex-direction: column;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px){
   .third_cont {
     display: flex;
     flex-direction: column;
@@ -331,7 +369,7 @@ a:hover {
   margin-left: 42%;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px){
   .fourth_cont {
     display: flex;
     flex-direction: column;
@@ -439,7 +477,7 @@ a:hover {
   justify-content: center;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px){
   .fifth_cont {
     display: flex;
     flex-direction: column;
@@ -502,6 +540,12 @@ a:hover {
   margin: 0.83em 0;
 }
 
+@media (max-width: 700px) {
+  .twitter-post {
+    margin-top: 150px;
+  }
+}
+
 .twitter-post span {
   color: #848789;
   font-weight: 300;
@@ -526,6 +570,12 @@ a:hover {
   justify-content: center;
 }
 
+@media (max-width: 700px) {
+  .slider-controls {
+    margin-top: 100px;
+  }
+}
+
 
 .control-dot {
   background: #f7f7f7;
@@ -539,4 +589,205 @@ a:hover {
 
 .control-dot.active {
   background: #848789;
+}
+
+.seventh_cont {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.seventh_left {
+  height: 600px;
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+}
+
+.seventh_left_top {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.small_black_saddle {
+  height: 100%;
+  width: 50%;
+  background: url("../images/l1.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img_animated {
+  width: 25%;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+ .expand {
+  text-align: center;
+  font-size: 23px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+.saddles {
+  height: 100%;
+  width: 50%;
+  background: url("../images/l2.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seventh_left_bottom {
+  height: 50%;
+  width: 100%;
+  background: url("../images/l3.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seventh_left_bottom .img_animated {
+  width: 12%;
+}
+
+.seventh_center {
+  height: 600px;
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+}
+
+.half_left {
+  height: 100%;
+  width: 50%;
+  background: url("../images/l4.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.half_right {
+  height: 100%;
+  width: 50%;
+  background: url("../images/l5.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seventh_right {
+  height: 600px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.seventh_right_top {
+  height: 50%;
+  width: 100%;
+  background: url("../images/l6.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seventh_right_top .img_animated {
+  width: 12%;
+}
+
+.seventh_right_bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.brown_saddle {
+  height: 100%;
+  width: 50%;
+  background: url("../images/l7.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blue_bag {
+  height: 100%;
+  width: 50%;
+  background: url("../images/l8.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button_cont {
+  width: 100%;
+  height: 160px;
+  background: #282f35;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-button {
+  border: 1px solid #bbb;
+  padding: 15px 50px;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 400;
+}
+
+.shop-button:hover {
+  border: 1px solid #5ec29d;
+}
+
+@media (max-width: 700px){
+  .seventh_cont {
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .seventh_left {
+    width: 100%;
+  }
+  .seventh_center {
+    width: 100%;
+  }
+  .seventh_right {
+    width: 100%;
+  }
+  .seventh_left_top {
+    height: 100%;
+  }
+  .seventh_left_bottom {
+    height: 100%;
+  }
+  .half_left {
+    height: 100%;
+  }
+  .half_right {
+    height: 100%;
+  }
+  .seventh_right_top {
+    height: 100%;
+  }
+  .seventh_right_bottom {
+    height: 100%;
+  }
 }
