@@ -1,0 +1,542 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', Open Sans, Roboto, sans-serif;
+  font-size: 1.5vh;
+  line-height: 1.42857143;
+  color: #333;
+}
+.container {
+  width: 100%;
+}
+
+.aod_logo_2 {
+  background: url("../images/main-logo.png")no-repeat center center;
+  padding-bottom: 110px;
+  width: 94px;
+  height: 85px;
+  margin-left: 45%;
+  display: none;
+}
+
+.menu {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f4f5fc;
+  padding-top: 60px;
+  margin-left: -10px;
+}
+
+@media (max-width: 950px){
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .aod_logo_1 {
+    display: none;
+  }
+  .aod_logo_2 {
+    display: block;
+  }
+}
+
+
+.horizontal_menu li {
+  display: inline-block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 30px;
+  letter-spacing: 2px;
+}
+
+a {
+  color: #4d4959;
+  cursor: auto;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+}
+
+a:hover {
+  color: #5ec29d;
+}
+
+.aod_logo_1 {
+  background: url("../images/main-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 94px;
+  height: 85px;
+  margin: -20px 40px 0 70px;
+}
+
+
+.first {
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: #f4f5fc;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  height: 700px;
+}
+
+.intro {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfb;
+}
+
+@media (max-width: 950px){
+  .intro {
+    height: 70vh;
+  }
+}
+
+.intro h1 {
+  text-align: center;
+  color: #353738;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url("../images/cog-icon.png") no-repeat top center;
+  padding-top: 75px;
+  margin-top: 100px;
+}
+
+.intro p {
+  display: block;
+  text-align: center;
+  color: #5b5656;
+  margin-top: 25px;
+  margin-bottom: 110px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.chain_pic {
+  height:50px;
+  width: 50px;
+  background-image: url("../images/cog-icon.png");
+  background-repeat: no-repeat;
+  background-color: #f4f5fc;
+  background-size: cover;
+}
+
+.third_cont {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.third_left_center {
+  background: url("../images/left-box-1.jpg") no-repeat center center;
+  background-size: cover;
+  width: 67%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left_pic {
+  width: 113px;
+  height: 118px;
+  background: url("../images/bicycle-logo.png");
+  margin-left: 46%;
+
+}
+
+.third_right {
+  height: 600px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 950px){
+  .third_cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 130vh;
+  }
+  .third_left_center {
+    width: 100%;
+  }
+  .third_right {
+    width: 100%;
+  }
+  .left_pic {
+    margin-left: 34%;
+  }
+}
+
+.oliva {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.oliva_text {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.oliva h2 {
+  text-align: center;
+  color: #353738;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url("../images/frame-icon.png") no-repeat top center;
+  padding-top: 50px;
+}
+
+.oliva p {
+  display: block;
+  color: #5b5656;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+  margin-top: 15px;
+  margin-left: 70px;
+  width: 80%;
+}
+
+.thin-sep {
+  height: 1px;
+  width: 50px;
+  background-color: #5b5656;
+  margin: 8% auto 0 auto;
+}
+
+.right_pic_bottom {
+  background: url("../images/seat-red.jpg") no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.arrow {
+  background: url("../images/arrow.png") no-repeat;
+  height: 20px;
+  width: 20px;
+  margin-top: -1px;
+}
+
+.fourth_cont {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fourth_left {
+  height: 600px;
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+}
+
+.boriosa {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boriosa_text {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.boriosa_text h2 {
+  text-align: center;
+  color: #353738;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url("../images/mech-icon.png") no-repeat top center;
+  padding-top: 50px;
+}
+
+.boriosa_text p {
+  display: block;
+  color: #5b5656;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+  margin-top: 15px;
+  margin-left: 70px;
+  width: 80%;
+}
+
+.left_pic_bottom {
+  background: url("../images/seat-black.jpg") no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fourth_center_right {
+  background: url("../images/left-box-2.jpg") no-repeat center center;
+  background-size: cover;
+  width: 66%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vintage_logo {
+  width: 177px;
+  height: 152px;
+  background: url("../images/vintage-logo.png");
+  margin-left: 42%;
+}
+
+@media (max-width: 950px){
+  .fourth_cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 130vh;
+  }
+  .fourth_left {
+    width: 100%;
+  }
+  .boriosa {
+    width: 100%;
+  }
+  .fourth_center_right {
+    width: 100%;
+  }
+  .vintage_logo {
+    margin-left: 28%;
+  }
+}
+
+.fifth_cont {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left_pic_red_frame {
+  background: url("../images/red-frame.jpg") center center no-repeat;
+  background-size: cover;
+  width: 34%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bicycles_logo {
+  width: 208px;
+  height: 67px;
+  background: url("../images/bicycles-sml-logo.png");
+  margin-left: 33%;
+}
+
+.fifth_center {
+  height: 600px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text_hulot {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hulot {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hulot h2 {
+  text-align: center;
+  color: #353738;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  background: url("../images/front-icon.png") no-repeat top center;
+  padding-top: 60px;
+}
+
+.hulot p {
+  display: block;
+  color: #5b5656;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+  margin-top: 15px;
+  margin-left: 70px;
+  width: 80%;
+}
+
+.mavic_pic {
+  background: url("../images/chrome-wheels.jpg") no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fifth_right {
+  background: url("../images/red-bike.jpg") center center no-repeat;
+  background-size: cover;
+  width: 33%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 950px){
+  .fifth_cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 170vh;
+  }
+  .left_pic_red_frame {
+    width:100%;
+  }
+  .fifth_center {
+    width: 100%;
+  }
+  .fifth_right {
+    width:100%;
+  }
+}
+
+.slide_sixth {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.slider {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slide {
+  display: inline-block;
+  animation-name: none;
+  animation-duration: 2s;
+  animation-direction: reverse;
+  transition: 2s;
+}
+
+.slide.invisible {
+  display: none;
+}
+
+.twitter-logo {
+  width: 32px;
+  height: 27px;
+  background: url("../images/twitter-bird.png") center center no-repeat;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.twitter-post {
+  color: #353738;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0.83em 0;
+}
+
+.twitter-post span {
+  color: #848789;
+  font-weight: 300;
+}
+
+.slide-text {
+  color: #848789;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 100px;
+  margin-top: 25px;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.slider-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.control-dot {
+  background: #f7f7f7;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #848789;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.control-dot.active {
+  background: #848789;
+}
