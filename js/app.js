@@ -10,10 +10,8 @@ visibleList.forEach( (elem) => {
     hiddenList.style.display = "inline-block";
   });
   elem.addEventListener('mouseout', () => {
-    setTimeout( () => {
         let hiddenList = elem.querySelector('.hidden-menu');
         hiddenList.style.display = "none";
-      }, 3000);
     });
 
 });
@@ -68,7 +66,7 @@ for(let i = 0; i < dots.length; i++){
 
   sr.reveal('.left_pic, .vintage_logo, .bicycles_logo', {delay: 600});
 
-  // section class = "seventh" pictures animation-name
+  // section class = "seventh" - pictures animation;
 
   let animated = document.querySelectorAll('.animated');
 
@@ -166,3 +164,18 @@ for(let i = 0; i < dots.length; i++){
       text.style.visibility = "hidden";
     });
   }
+
+// input validation;
+
+  let input = document.querySelector('input');
+  let button = document.querySelector('button');
+
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (input.value.indexOf('@') === -1 || input.value.length < 6) {
+    alert("Email address should contain '@' and consist from 5 characters at least!");
+    return event.preventDefault();
+  } else {
+    alert("Email address has been written correctly:)");
+  }
+})
