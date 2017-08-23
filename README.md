@@ -2,8 +2,10 @@
 
 It is responsive website build with following tools:
 
-- HTML
+- HTML,
 
-- CSS
+- CSS,
 
-- JavaScript.
+- JavaScript,
+
+- RWD.
