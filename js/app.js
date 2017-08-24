@@ -173,7 +173,7 @@ for(let i = 0; i < dots.length; i++){
 button.addEventListener("click", (e) => {
   e.preventDefault();
   if (input.value.indexOf('@') === -1 || input.value.length < 6) {
-    alert("Email address should contain '@' and consist from 5 characters at least!");
+    alert("Email address should contain '@' and consist of 5 characters at least!");
     return event.preventDefault();
   } else {
     alert("Email address has been written correctly:)");

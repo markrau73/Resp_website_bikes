@@ -227,7 +227,7 @@ body {
     width: 100%;
   }
   .left_pic {
-    margin-left: 34%;
+    margin-left: 45%;
   }
 }
 
@@ -386,7 +386,7 @@ body {
     width: 100%;
   }
   .vintage_logo {
-    margin-left: 28%;
+    margin-left: 40%;
   }
 }
 
@@ -492,6 +492,9 @@ body {
   }
   .fifth_right {
     width:100%;
+  }
+  .bicycles_logo {
+    margin-left: 40%;
   }
 }
 
@@ -876,7 +879,7 @@ input {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-left: -80%;
+
 
   }
   input {
