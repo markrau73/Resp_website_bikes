@@ -19,7 +19,7 @@ body {
   padding-bottom: 110px;
   width: 94px;
   height: 85px;
-  margin-left: 45%;
+
   display: none;
 }
 
@@ -71,12 +71,18 @@ body {
   flex-direction: column;
 }
 
-@media (max-width: 1020px){
+@media (max-width: 900px){
 .menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+  .left_menu {
+    margin-left: -12%;
+  }
+  .right_menu {
+    margin-left: -12%;
   }
   .ul_left_menu {
     display: flex;
@@ -93,7 +99,8 @@ body {
     display: none;
   }
   .aod_logo_2 {
-    display: block;
+    display: inline-block;
+    margin-left: 42%;
   }
 }
 
@@ -143,9 +150,28 @@ body {
   background-color: #fbfbfb;
 }
 
+@media (max-width: 1500px){
+  .intro {
+    height: 10%;
+    padding: 0 12%;
+  }
+}
+
 @media (max-width: 1100px){
   .intro {
-    height: 70vh;
+    padding: 0 12%;
+  }
+}
+
+@media (max-width: 800px){
+  .intro {
+    padding: 0 12%;
+  }
+}
+
+@media (max-width: 700px){
+  .intro {
+    padding: 0 12%;
   }
 }
 
@@ -202,7 +228,7 @@ body {
   width: 113px;
   height: 118px;
   background: url("../images/bicycle-logo.png");
-  margin-left: 46%;
+  margin: 0 auto;
 
 }
 
@@ -213,7 +239,7 @@ body {
   flex-direction: column;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
   .third_cont {
     display: flex;
     flex-direction: column;
@@ -226,9 +252,6 @@ body {
   .third_right {
     width: 100%;
   }
-  .left_pic {
-    margin-left: 45%;
-  }
 }
 
 .oliva {
@@ -240,9 +263,9 @@ body {
 }
 
 .oliva_text {
-  margin-top: -50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .oliva h2 {
@@ -264,8 +287,13 @@ body {
   line-height: 1.8em;
   text-align: justify;
   margin-top: 15px;
-  margin-left: 70px;
   width: 80%;
+}
+
+@media (max-width: 1000px){
+  .oliva {
+    height: 200%;
+  }
 }
 
 .thin-sep {
@@ -314,9 +342,9 @@ body {
 }
 
 .boriosa_text {
-  margin-top: -50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .boriosa_text h2 {
@@ -330,7 +358,6 @@ body {
 }
 
 .boriosa_text p {
-  display: block;
   color: #5b5656;
   font-size: 14px;
   letter-spacing: 1px;
@@ -338,7 +365,6 @@ body {
   line-height: 1.8em;
   text-align: justify;
   margin-top: 15px;
-  margin-left: 70px;
   width: 80%;
 }
 
@@ -366,27 +392,25 @@ body {
   width: 177px;
   height: 152px;
   background: url("../images/vintage-logo.png");
-  margin-left: 42%;
+  margin: 0 auto;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
   .fourth_cont {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 130vh;
+    height: 200%;
   }
   .fourth_left {
     width: 100%;
   }
   .boriosa {
     width: 100%;
+    height: 100%;
   }
   .fourth_center_right {
     width: 100%;
-  }
-  .vintage_logo {
-    margin-left: 40%;
   }
 }
 
@@ -410,7 +434,7 @@ body {
   width: 208px;
   height: 67px;
   background: url("../images/bicycles-sml-logo.png");
-  margin-left: 33%;
+  margin: 0 auto;
 }
 
 .fifth_center {
@@ -429,9 +453,9 @@ body {
 }
 
 .hulot {
-  margin-top: -50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hulot h2 {
@@ -453,7 +477,6 @@ body {
   line-height: 1.8em;
   text-align: justify;
   margin-top: 15px;
-  margin-left: 70px;
   width: 80%;
 }
 
@@ -477,12 +500,12 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
   .fifth_cont {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 170vh;
+    height: 200%;
   }
   .left_pic_red_frame {
     width:100%;
@@ -492,9 +515,6 @@ body {
   }
   .fifth_right {
     width:100%;
-  }
-  .bicycles_logo {
-    margin-left: 40%;
   }
 }
 
@@ -512,14 +532,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.slide {
-  display: inline-block;
-  animation-name: none;
-  animation-duration: 2s;
-  animation-direction: reverse;
-  transition: 2s;
 }
 
 .slide.invisible {
@@ -543,12 +555,6 @@ body {
   margin: 0.83em 0;
 }
 
-@media (max-width: 700px) {
-  .twitter-post {
-    margin-top: 150px;
-  }
-}
-
 .twitter-post span {
   color: #848789;
   font-weight: 300;
@@ -561,9 +567,23 @@ body {
   font-weight: 300;
   margin-bottom: 100px;
   margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 2px;
   text-align: center;
   line-height: 1.8em;
+}
+
+@media (max-width: 1000px) {
+  .slide_sixth {
+    height: 650px;
+  }
+  .slide-text {
+    width: 75%;
+  }
+  .twitter-post {
+    margin-top: 180px;
+  }
 }
 
 .slider-controls {
@@ -573,12 +593,12 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .slider-controls {
-    margin-top: 100px;
+    margin-top: 170px;
+    margin-bottom: -10%;
   }
 }
-
 
 .control-dot {
   background: #f7f7f7;
@@ -760,7 +780,7 @@ body {
   border: 1px solid #5ec29d;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
   .seventh_cont {
     height: 1100px;
     display: flex;
@@ -812,6 +832,7 @@ body {
   justify-content: center;
   background-color: #fff;
   align-items: center;
+
 }
 
 .logo_header {
@@ -821,29 +842,18 @@ body {
   font-size: 24px;
   font-weight: 300;
   background: url("../images/main-logo.png") no-repeat top center;
-  padding-top: 120px;
-  margin: 20px 0 40px 0;
+  padding-top: 110px;
   font-style: italic;
-}
-
-@media (max-width: 700px){
-  .logo_header {
-    margin-top: -40%;
-  }
 }
 
 .form_cont {
 width: 600px;
-margin-left: -4%;
 display: flex;
 flex-direction: row;
-justify-content: center;
 align-items: center;
 }
 
 .email_signup {
-  display: inline-block;
-  text-align: center;
   cursor: auto;
 }
 
@@ -872,20 +882,19 @@ input {
   cursor: pointer;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
   .form_cont {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-
+    justify-content: center;
 
   }
   input {
     width: 280px;
   }
 }
+
 
 footer {
   width: 100%;
@@ -897,17 +906,13 @@ footer {
   justify-content: space-around;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
   footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 500px;
   }
-}
-
-span {
-  font-size: 15px;
-  font-weight: bold;
 }
 
 .address {
@@ -915,6 +920,17 @@ span {
   font-weight: 300;
   word-spacing: 2px;
   line-height: 1.8em;
+}
+
+@media (max-width: 1000px){
+  .address {
+    margin: 0 auto;
+  }
+}
+
+span {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .address a {
@@ -927,7 +943,8 @@ span {
   list-style-type: disc;
   display: flex;
   flex-direction: row;
-  margin-right: 120px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .twitter {
@@ -935,7 +952,6 @@ span {
   height: 34px;
   width: 35px;
   display: block;
-  text-indent: -9999px;
   margin-right: 15px;
   cursor: pointer;
 }
@@ -945,7 +961,6 @@ span {
   height: 34px;
   width: 35px;
   display: block;
-  text-indent: -9999px;
   margin-right: 15px;
   cursor: pointer;
 }
@@ -954,8 +969,7 @@ span {
   background: url('../images/pintrest-icon.png');
   height: 34px;
   width: 35px;
-  display: block;
-  text-indent: -9999px;
+  display: block;;
   cursor: pointer;
 }
 
@@ -978,14 +992,15 @@ span {
   text-align: center;
   font-style: italic;
   font-weight: 300;
+  margin-right: 100px;
+}
+
+@media (max-width: 1000px){
+  .designed p {
+    margin: 0 auto;
+  }
 }
 
 .yebo {
   margin-left: 10px;
-}
-
-@media (max-width: 700px){
-  .designed p {
-    margin-right: 100px;
-  }
 }

@@ -59,7 +59,6 @@ for(let i = 0; i < dots.length; i++){
     dots[1].classList.remove('active');
   } )
 
-
 // white logos appearing with delay during scroll
 
   window.sr = ScrollReveal();
