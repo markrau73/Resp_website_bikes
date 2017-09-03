@@ -164,17 +164,34 @@ for(let i = 0; i < dots.length; i++){
     });
   }
 
-// input validation;
+// input validation with modal box;
 
   let input = document.querySelector('input');
   let button = document.querySelector('button');
+  let modal1 = document.getElementById('myModal_1');
+  let modal2 = document.getElementById('myModal_2');
+  let span = document.querySelectorAll(".close");
 
 button.addEventListener("click", (e) => {
   e.preventDefault();
   if (input.value.indexOf('@') === -1 || input.value.length < 6) {
-    alert("Email address should contain '@' and consist of 5 characters at least!");
-    return event.preventDefault();
+    modal1.style.display = "block";
   } else {
-    alert("Email address has been written correctly:)");
+    modal2.style.display = "block";
   }
-})
+});
+
+  span[0].addEventListener("click", () => {
+      modal1.style.display = "none";
+  });
+  span[1].addEventListener("click", () => {
+      modal2.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal1) {
+      modal1.style.display = "none";
+    } else if(e.target === modal2) {
+      modal2.style.display = "none";
+    }
+});
