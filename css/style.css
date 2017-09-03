@@ -962,6 +962,15 @@ input {
     width: 80%;
 }
 
+@media (max-width: 600px){
+  .modal-content_1 {
+    height: 20%;
+  }
+  .modal-content_2 {
+    height: 20%;
+  }
+}
+
 .close {
     color: #fff;
     float: right;
