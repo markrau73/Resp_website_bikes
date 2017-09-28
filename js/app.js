@@ -38,8 +38,9 @@ for(let i = 0; i < dots.length; i++){
 
 for(let i = 0; i < dots.length; i++){
   dots[i].classList.remove('active');
-}
   dots[0].classList.add('active');
+  }
+
 
   dots[1].addEventListener('click', (e) =>{
     e.target.classList.add('active');
@@ -82,84 +83,14 @@ for(let i = 0; i < dots.length; i++){
   }
 
   for (let i = 0; i < animated.length; i++){
-    animated[0].addEventListener('mouseleave', (e) => {
+    animated[i].addEventListener('mouseleave', (e) => {
       e.target.style = {
         background: 'url("images/l1.jpg") center center no-repeat',
         size: 'cover'
       };
-      let img = animated[0].querySelector('.img_animated');
+      let img = animated[i].querySelector('.img_animated');
       img.style.visibility = "hidden";
-      let text = animated[0].querySelector('.expand');
-      text.style.visibility = "hidden";
-    });
-    animated[1].addEventListener('mouseleave', (e) => {
-      e.target.style = {
-        background: 'url("images/l2.jpg") center center no-repeat',
-        size: 'cover'
-      };
-      let img = animated[1].querySelector('.img_animated');
-      img.style.visibility = "hidden";
-      let text = animated[1].querySelector('.expand');
-      text.style.visibility = "hidden";
-    });
-    animated[2].addEventListener('mouseleave', (e) => {
-      e.target.style = {
-        background: 'url("images/l3.jpg") center center no-repeat',
-        size: 'cover'
-      };
-      let img = animated[2].querySelector('.img_animated');
-      img.style.visibility = "hidden";
-      let text = animated[2].querySelector('.expand');
-      text.style.visibility = "hidden";
-    });
-    animated[3].addEventListener('mouseleave', (e) => {
-      e.target.style = {
-        background: 'url("images/l4.jpg") center center no-repeat',
-        size: 'cover'
-      };
-      let img = animated[3].querySelector('.img_animated');
-      img.style.visibility = "hidden";
-      let text = animated[3].querySelector('.expand');
-      text.style.visibility = "hidden";
-    });
-    animated[4].addEventListener('mouseleave', (e) => {
-      e.target.style = {
-        background: 'url("images/l5.jpg") center center no-repeat',
-        size: 'cover'
-      };
-      let img = animated[4].querySelector('.img_animated');
-      img.style.visibility = "hidden";
-      let text = animated[4].querySelector('.expand');
-      text.style.visibility = "hidden";
-    });
-    animated[5].addEventListener('mouseleave', (e) => {
-      e.target.style = {
-        background: 'url("images/l6.jpg") center center no-repeat',
-        size: 'cover'
-      };
-      let img = animated[5].querySelector('.img_animated');
-      img.style.visibility = "hidden";
-      let text = animated[5].querySelector('.expand');
-      text.style.visibility = "hidden";
-    });
-    animated[6].addEventListener('mouseleave', (e) => {
-      e.target.style = {
-        background: 'url("images/l7.jpg") center center no-repeat',
-        size: 'cover'
-      };
-      let img = animated[6].querySelector('.img_animated');
-      img.style.visibility = "hidden";
-      let text = animated[6].querySelector('.expand');
-      text.style.visibility = "hidden";
-    });
-    animated[7].addEventListener('mouseleave', (e) => {
-      e.target.style = {
-        background: 'url("images/l8.jpg") center center no-repeat',
-        size: 'cover'
-      };
-      let img = animated[7].querySelector('.img_animated');
-      img.style.visibility = "hidden";
-      let text = animated[7].querySelector('.expand');
+      let text = animated[i].querySelector('.expand');
       text.style.visibility = "hidden";
     });
   }
@@ -181,12 +112,12 @@ button.addEventListener("click", (e) => {
   }
 });
 
-  span[0].addEventListener("click", () => {
+for (i = 0; i < span.length; i++){
+  span[i].addEventListener("click", (e) => {
       modal1.style.display = "none";
-  });
-  span[1].addEventListener("click", () => {
       modal2.style.display = "none";
   });
+}
 
   window.addEventListener("click", (e) => {
     if (e.target === modal1) {
