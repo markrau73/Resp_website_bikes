@@ -41,7 +41,6 @@ for(let i = 0; i < dots.length; i++){
   dots[0].classList.add('active');
   }
 
-
   dots[1].addEventListener('click', (e) =>{
     e.target.classList.add('active');
     dots[0].classList.remove('active');
@@ -112,7 +111,7 @@ button.addEventListener("click", (e) => {
   }
 });
 
-for (i = 0; i < span.length; i++){
+for ( let i = 0; i < span.length; i++){
   span[i].addEventListener("click", (e) => {
       modal1.style.display = "none";
       modal2.style.display = "none";
