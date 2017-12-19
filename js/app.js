@@ -1,16 +1,16 @@
 // section menu - drop down menu;
 
-let visibleList = document.querySelectorAll('.visible-li');
-let hiddenList = document.querySelectorAll('.hidden-menu');
+const visibleList = document.querySelectorAll('.visible-li');
+const hiddenList = document.querySelectorAll('.hidden-menu');
 
 
 visibleList.forEach( (elem) => {
   elem.addEventListener('mouseover', () => {
-    let hiddenList = elem.querySelector('.hidden-menu');
+    const hiddenList = elem.querySelector('.hidden-menu');
     hiddenList.style.display = "inline-block";
   });
   elem.addEventListener('mouseout', () => {
-        let hiddenList = elem.querySelector('.hidden-menu');
+        const hiddenList = elem.querySelector('.hidden-menu');
         hiddenList.style.display = "none";
     });
 
@@ -18,26 +18,26 @@ visibleList.forEach( (elem) => {
 
 // section class="sixth" - slider;
 
-let slides = document.querySelectorAll('.slide');
-let dots = document.querySelectorAll('.control-dot');
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.control-dot');
 
-for(let j=0; j<slides.length; j++){
-  slides[j].classList.add('invisible');
+for(let slide of slides){
+  slide.classList.add('invisible');
 }
 slides[0].classList.remove('invisible');
 
-for(let i = 0; i < dots.length; i++){
-  dots[i].addEventListener('click', (e) => {
+for(let dot of dots){
+  dot.addEventListener('click', (e) => {
       let id = e.target.dataset.number;
-    for(let j=0; j<slides.length; j++){
-      slides[j].classList.add('invisible');
+    for(let slide of slides){
+      slide.classList.add('invisible');
     }
     slides[id - 1].classList.remove('invisible');
   })
 }
 
-for(let i = 0; i < dots.length; i++){
-  dots[i].classList.remove('active');
+for(let dot of dots){
+  dot.classList.remove('active');
   dots[0].classList.add('active');
   }
 
@@ -67,7 +67,7 @@ for(let i = 0; i < dots.length; i++){
 
   // section class = "seventh" - pictures animation;
 
-  let animated = document.querySelectorAll('.animated');
+  const animated = document.querySelectorAll('.animated');
 
   for (let i = 0; i < animated.length; i++){
     animated[i].addEventListener('mouseover', (e) => {
@@ -96,11 +96,11 @@ for(let i = 0; i < dots.length; i++){
 
 // input validation with modal box;
 
-  let input = document.querySelector('input');
-  let button = document.querySelector('button');
-  let modal1 = document.getElementById('myModal_1');
-  let modal2 = document.getElementById('myModal_2');
-  let span = document.querySelectorAll(".close");
+  const input = document.querySelector('input');
+  const button = document.querySelector('button');
+  const modal1 = document.getElementById('myModal_1');
+  const modal2 = document.getElementById('myModal_2');
+  const span = document.querySelectorAll(".close");
 
 button.addEventListener("click", (e) => {
   e.preventDefault();
