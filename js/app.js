@@ -37,8 +37,8 @@ for(let dot of dots){
 }
 
 for(let dot of dots){
-  dot.classList.remove('active');
-  dots[0].classList.add('active');
+    dot.classList.remove('active');
+    dots[0].classList.add('active');
   }
 
   dots[1].addEventListener('click', (e) =>{
