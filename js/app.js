@@ -21,25 +21,26 @@ visibleList.forEach( (elem) => {
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.control-dot');
 
-for(let slide of slides){
+for(const slide of slides){
   slide.classList.add('invisible');
 }
 slides[0].classList.remove('invisible');
 
-for(let dot of dots){
+for(const dot of dots){
   dot.addEventListener('click', (e) => {
-      let id = e.target.dataset.number;
-    for(let slide of slides){
+      const id = e.target.dataset.number;
+    for(const slide of slides){
       slide.classList.add('invisible');
     }
     slides[id - 1].classList.remove('invisible');
   })
 }
 
-for(let dot of dots){
+for(const dot of dots){
     dot.classList.remove('active');
     dots[0].classList.add('active');
   }
+
 
   dots[1].addEventListener('click', (e) =>{
     e.target.classList.add('active');
